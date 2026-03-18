@@ -18,10 +18,14 @@ jobs:
         uses: typst-community/setup-typst@v3
 
       - name: Compile AI Engineer CV
-        run: typst compile ai-engineer.typ ai-engineer.pdf
+        run: |
+          mkdir -p public
+          typst compile ai-engineer.typ public/ai-engineer.pdf
         
       - name: Compile Data Engineer CV
-        run: typst compile data-engineer-role.typ data-engineer-role.pdf
+        run: |
+          mkdir -p public
+          typst compile data-engineer-role.typ public/data-engineer-role.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

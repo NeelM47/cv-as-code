@@ -95,14 +95,13 @@
 
 #let generate_experience(yaml_data) = {
 
-  for job in yaml_data.experience [
+  for job in yaml_data.experience[
     #resume_entry(
       job.title, 
       job.dates, 
       job.company, 
       job.location,
       [
-
         #for bullet in job.bullets [
           - #bullet
         ]
@@ -113,7 +112,7 @@
 
 #let generate_education(yaml_data) = {
 
-  for edu in yaml_data.education [
+  for edu in yaml_data.education[
     #resume_entry(
       edu.degree,
       edu.dates,

@@ -1,0 +1,43 @@
+# content/resume-data.yml
+
+personal:
+  name: "Neel Shirish More"
+  phone: "+44 7393 063 988"
+  email: "neelmore007@gmail.com"
+  location: "Manchester, UK"
+  visa: "Graduate Visa (Valid until Aug 2027)"
+  linkedin: "https://www.linkedin.com/in/neel-more-ai/"
+  github: "https://github.com/NeelM47"
+  portfolio: "https://neelm47.github.io/"
+
+experience:
+  - title: "AI Developer & Consultant"
+    company: "RTN Zero Consulting"
+    location: "Manchester, UK"
+    dates: "Dec 2025 – Present"
+    bullets:
+      - "Engineered ML algorithms to forecast revenue and emissions, generating actionable AI insights to accelerate Net Zero strategies."
+      - "Optimized workforce management by developing intelligent employee scheduling systems driven by real-time weather data analysis."
+      - "Streamlined data processing for carbon certification compliance, utilizing AI tools to enhance business productivity and operational speed."
+
+  - title: "Data Analyst (Data Engineering Focus)"
+    company: "Subtle Solutions"
+    location: "India (Remote)"
+    dates: "Sept 2023 – Oct 2025"
+    bullets:
+      - "Developed end-to-end ETL pipelines on AWS Databricks, migrating large-scale e-commerce data into centralized Amazon S3 data lakes."
+      - "Integrated CI/CD pipelines via Azure DevOps and Git in an Agile framework, maintaining 99.9% uptime for production data workflows."
+      - "Conducted advanced EDA using Python and delivered interactive Power BI dashboards for executive-level performance tracking."
+
+education:
+  - degree: "MSc. Artificial Intelligence"
+    university: "University of Manchester"
+    location: "Manchester, UK"
+    dates: "Sept 2023 – Sept 2024"
+    modules: "Computer Vision, Large Language Models, Cognitive Robotics, Data Science"
+
+  - degree: "B.E. Computer Engineering"
+    university: "Bharati Vidyapeeth's College of Engineering"
+    location: "Pune, India"
+    dates: "Aug 2019 – Aug 2023"
+    modules: "CNNs, NLP, Network Security, Operating Systems, Data Engineering"

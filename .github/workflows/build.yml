@@ -1,0 +1,28 @@
+name: Build CVs
+on:
+  push:
+    branches: [ main ]
+  release:
+    types: [ created ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Compile AI Engineer CV
+        run: typst compile ai-data-engineer.typ ai-data-engineer.pdf
+        
+      - name: Compile Manager CV
+        run: typst compile data-engineer-role.typ data-engineer-role.pdf
+
+      # Upload PDFs as an artifact so you can download them from the Actions tab
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-cvs
+          path: ./*.pdf

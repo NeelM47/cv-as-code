@@ -198,7 +198,7 @@ jobs:
 Scan this QR code to see the live CV:
 
 ```
-[INSERT QR CODE IMAGE HERE]
+[![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://neelm47.github.io/cv-as-code/ai-engineer.pdf)]
 ```
 
 ---

@@ -91,36 +91,45 @@
   // 3. BODY RENDERER
   body
 }
-// Add this at the bottom of templates/base-cv.typ
+
+// ==========================================
+// EXPERIENCE GENERATION (FIXED)
+// ==========================================
 
 #let generate_experience(yaml_data) = {
-
-  for job in yaml_data.experience[
-    #resume_entry(
+  // Use { } for code blocks, not [ ]
+  for job in yaml_data.experience {
+    resume_entry(
       job.title, 
       job.dates, 
       job.company, 
       job.location,
+      // This [ ] is correct - it's content inside the function call
       [
         #for bullet in job.bullets [
           - #bullet
         ]
       ]
     )
-  ]
+  }
 }
 
-#let generate_education(yaml_data) = {
+// ==========================================
+// EDUCATION GENERATION (FIXED)
+// ==========================================
 
-  for edu in yaml_data.education[
-    #resume_entry(
+#let generate_education(yaml_data) = {
+  // Use { } for code blocks, not [ ]
+  for edu in yaml_data.education {
+    resume_entry(
       edu.degree,
       edu.dates,
       edu.university,
       edu.location,
+      // This [ ] is correct - it's content inside the function call
       [
         - *Modules:* #edu.modules
       ]
     )
-  ]
+  }
 }

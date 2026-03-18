@@ -5,6 +5,9 @@ on:
   release:
     types: [ created ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,14 +18,19 @@ jobs:
         uses: typst-community/setup-typst@v3
 
       - name: Compile AI Engineer CV
-        run: typst compile ai-data-engineer.typ ai-data-engineer.pdf
+        run: typst compile ai-engineer.typ ai-engineer.pdf
         
-      - name: Compile Manager CV
+      - name: Compile Data Engineer CV
         run: typst compile data-engineer-role.typ data-engineer-role.pdf
 
-      # Upload PDFs as an artifact so you can download them from the Actions tab
-      - name: Upload PDFs
-        uses: actions/upload-artifact@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: compiled-cvs
-          path: ./*.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+      # Upload PDFs as an artifact so you can download them from the Actions tab
+      #- name: Upload PDFs
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: compiled-cvs
+      #    path: ./*.pdf

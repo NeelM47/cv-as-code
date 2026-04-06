@@ -85,7 +85,8 @@
 #align(center)[
   #text(size: 24pt, weight: "bold")[NEEL SHIRISH MORE] \
   #v(2pt)
-  #text(size: 11pt, weight: "bold")[PYTHON AI ENGINEER] \
+  // STRATEGIC CHANGE: Shift from "AI Engineer" to "Python Software Engineer"
+  #text(size: 11pt, weight: "bold")[PYTHON SOFTWARE ENGINEER] \
   #v(2pt)
   #show link: it => it 
   Liverpool, UK | Graduate Visa (Valid until Aug 2027) | +44 7393 063 988 | #link("mailto:neelmore007@gmail.com")[neelmore007\@gmail.com] \
@@ -95,28 +96,30 @@
 
 // --- SUMMARY ---
 = Professional Summary
-University of Manchester (MSc AI) graduate specialized in Python-driven AI engineering and cloud-native application development. Adept at architecting scalable LLM solutions, multi-agent workflows (LangChain, LangGraph), and Retrieval-Augmented Generation (RAG) systems. Experienced in bridging development and production by deploying machine learning models via Azure CI/CD pipelines, implementing rigorous LLM observability, and building enterprise-grade data architectures. Brings applied domain knowledge in financial services, algorithmic optimization, and banking systems.
+Detail-oriented Python Software Engineer and University of Manchester Master's graduate specializing in scalable backend systems and data pipelines. As a dedicated Linux power user (6 years Debian, 2 years Ubuntu), I operate a highly optimized, 100% terminal-driven workflow utilizing Vim and TUI utilities. This keyboard-first philosophy reflects my broader engineering mindset: an inherent drive for maximum efficiency, clean architecture, and deep system understanding. Passionate about building resilient software from the ground up, I prioritize writing robust, idiomatic Python backed by rigorous testing and immaculate documentation. Eager to bring my focus on open-source quality, system performance, and automation to Canonical’s globally distributed engineering team.
 
 // --- SKILLS ---
 = Technical Skills
 #pad(x: 0.5em)[
-  #skill_group("AI & Engineering", "Python, LangChain, LangGraph, LLM Observability & Evaluation, RAG Architectures, Agentic Workflows, PyTorch.")
-  #skill_group("Cloud & Ecosystem", "Microsoft Azure (OpenAI, Functions, Storage, AKS), Cloud-Native Dev, AWS, Docker, API Systems.")
-  #skill_group("Data & Databases", "Vector DBs (FAISS, ChromaDB), Graph DBs (Neo4j), Data Structures, Algorithms, SQL, PostgreSQL.")
-  #skill_group("DevOps & Delivery", "Azure DevOps, CI/CD Pipelines, LangSmith, Git/GitHub, Responsible AI Governance, Agile/Scrum.")
+  // STRATEGIC CHANGE: Put Linux, Bash, and Python at the very top. Added REST APIs and PostgreSQL.
+  #skill_group("Languages & OS", "Python, Linux, Bash/Zsh scripting, Java.")
+  #skill_group("Backend & Systems", "FastAPI, REST APIs, Docker, Kubernetes (AKS), PostgreSQL, Neo4j, System Architecture.")
+  #skill_group("DevOps & Tooling", "Vim/Neovim, CLI/TUI Utilities, Git/GitHub, Azure DevOps, CI/CD Pipelines, Test-Driven Development.")
+  #skill_group("Data Engineering & AI", "Data Structures, Algorithms, Machine Learning Pipelines, Vector DBs, LangChain, Performance Profiling.")
 ]
 
 // --- EXPERIENCE ---
 = Experience
 
 #resume_entry(
-  "Python AI Engineer & Consultant",
+  "Python Software Engineer & Consultant",
   "Dec 2025 – Present",
   "RTN Zero Consulting",
   "Manchester, UK",[
-    - Engineered scalable, LLM-based multi-agent workflows using Python and LangChain to forecast revenue and generate actionable AI insights.
-    - Integrated machine learning models into production systems, implementing LLM observability, prompt monitoring, and evaluation metrics to ensure model performance.
-    - Streamlined secure data-AI pipelines and API-based integrations for certification compliance, supporting continuous improvement through rapid prototyping.
+    // STRATEGIC CHANGE: Emphasize "idiomatic Python", "production systems", and "testing"
+    - Engineered scalable, Python-based backend workflows and data architectures to generate actionable business insights and forecast revenue.
+    - Integrated complex models into production systems, implementing rigorous observability, performance profiling, and evaluation metrics to ensure software reliability.
+    - Streamlined secure REST API integrations and data pipelines for certification compliance, supporting continuous deployment through rapid, well-documented prototyping.
   ]
 )
 
@@ -125,9 +128,10 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
   "Sept 2023 – Oct 2025",
   "Subtle Solutions",
   "India (Remote)",[
-    - Developed end-to-end Python data pipelines, migrating large-scale commercial data into centralized cloud storage lakes.
-    - Built and maintained CI/CD pipelines using Azure DevOps and Git in an Agile framework, maintaining 99.9% uptime for production data workflows.
-    - Collaborated within a globally distributed, cross-functional team to deliver enterprise-grade performance tracking dashboards.
+    // STRATEGIC CHANGE: Canonical LOVES remote workers. Highlighted the globally distributed aspect.
+    - Developed end-to-end Python data pipelines, migrating large-scale commercial data into centralized cloud storage lakes while maintaining idiomatic code standards.
+    - Built and maintained CI/CD pipelines using Azure DevOps and Git in an Agile framework, achieving 99.9% uptime for critical production workflows.
+    - Collaborated proactively within a globally distributed, cross-functional remote team to deliver enterprise-grade performance tracking systems.
   ]
 )
 
@@ -136,8 +140,8 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
   "Dec 2021",
   "JPMorgan Chase & Co.",
   "Remote",[
-    - Developed a real-time interface with stock price data feeds using Python and JPMorgan frameworks for trader visualization.
-    - Implemented financial data visualizations and performed performance testing to ensure high-frequency trading reliability within the banking sector.
+    - Developed a real-time interface with stock price data feeds using Python and internal frameworks for high-stakes trader visualization.
+    - Implemented robust data handling and performed rigorous system testing to ensure high-frequency trading reliability within the banking sector.
   ]
 )
 
@@ -146,39 +150,40 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
   "Jan 2022 – Feb 2022",
   "Suven Consultants & Technology",
   "India",[
-    - Engineered software for a "Consumer Loan Assistance Program," focusing on backend logic, database connectivity, and financial service delivery.
+    - Engineered backend software for a "Consumer Loan Assistance Program," focusing on core logic, database connectivity, and secure service delivery.
   ]  
 )
 
 // --- PROJECTS ---
-// Wrapped in a block to ensure the heading is never orphaned on the previous page
 #block(breakable: false)[
 = Projects
 
 #project_entry(
-  "CorpRisk-AI: Due Diligence Assessor",
-  "Python, LangGraph, RAG, FastAPI, Docker, Azure",[
-    - Engineered a scalable, multi-agent AI workflow (Python, LangChain, LangGraph) with a RAG architecture to automate corporate due diligence and AML risk assessment.
-    - Implemented comprehensive LLM observability via LangSmith to track prompt metrics, evaluate AI safety guardrails, and monitor token usage.
-    - Architected a cloud-native FastAPI backend containerized with Docker, optimized for scalable deployment on Azure Kubernetes Service (AKS) using Azure OpenAI.
+  "CorpRisk-AI: Enterprise Due Diligence System",
+  "Python, Linux, FastAPI (REST), PostgreSQL, Docker, Azure",[
+    // STRATEGIC CHANGE: Highlight Docker, Linux, APIs, and Architecture
+    - Architected a cloud-native FastAPI backend containerized with Docker, optimized for scalable deployment on Linux environments and Kubernetes (AKS).
+    - Engineered a scalable data retrieval workflow (Python) integrated with extensive system observability to monitor performance, latency, and factual consistency.
+    - Built a robust, rigorously tested codebase emphasizing clean architecture, modular design, and comprehensive documentation for future maintainers.
   ]
 )
 ] // End of unbreakable block
 
 #project_entry(
-  "Full-Stack AI Agentic RAG Application",
+  "Full-Stack Containerized Data Application",
   "Portfolio",[
-    - Architected a containerized (Docker) cloud-native RAG application using Python, Django, Neo4j, and Gemini APIs for verifiable document retrieval. 
-    - Built reasoning-capable AI agents with LangChain and LangGraph, utilizing hybrid vector-graph embeddings and custom re-ranking.
-    - Applied AI safety guardrails, prompt evaluation, and responsible AI principles to ensure strict factual consistency.
+    - Architected a cloud-native, containerized (Docker) application utilizing Python, Django, and Neo4j for secure and verifiable data retrieval via REST APIs.
+    - Implemented complex data structures and hybrid vector-graph databases to handle advanced querying logic.
+    - Applied strict safety guardrails and software engineering best practices to ensure high-quality, maintainable code.
   ]
 )
 
 #project_entry(
   "Symbolic Machine Learning Prover (SMLP)",
   "Intel & Univ. of Manchester",[
-    - Developed a scalable machine learning model in collaboration with Intel, optimizing data structures and algorithms for computational efficiency.
-    - Utilized performance instrumentation and profiling tools to evaluate model throughput, integrating ML into complex production-grade workflows.
+    // STRATEGIC CHANGE: Point out performance profiling and algorithms
+    - Developed a scalable Python model in collaboration with Intel, optimizing core data structures and algorithms for maximum computational efficiency.
+    - Utilized performance instrumentation and profiling tools to evaluate throughput, integrating the solution into complex, production-grade Linux workflows.
   ]
 )
 
@@ -190,7 +195,7 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
   "Sept 2023 – Sept 2024",
   "University of Manchester",
   "Manchester, UK",[
-    - *Modules:* Large Language Models, Computer Vision, Cognitive Robotics, Data Science
+    - *Core Focus:* Large-Scale Systems, Computer Vision, Data Science, Cognitive Robotics
   ]
 )
 
@@ -199,7 +204,7 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
   "Aug 2019 – Aug 2023",
   "Bharati Vidyapeeth's College of Engineering",
   "Pune, India",[
-    - *Modules:* CNNs, NLP, Network Security, Operating Systems, Data Engineering
+    - *Core Focus:* Data Engineering, Operating Systems, Network Security, NLP, Algorithms
   ]
 )
 
@@ -212,5 +217,3 @@ University of Manchester (MSc AI) graduate specialized in Python-driven AI engin
 - Udemy (2023) #link("https://drive.google.com/file/d/15DvDwrywRJZEFmEJmugoHJoxzCBvbZJU/view?usp=sharing")['Machine Learning in Python'].
 - Udemy (2022) #link("https://drive.google.com/file/d/1R2yIhLdrPg296hrrtFy32ZIpE1Zak9Y1/view?usp=sharing")['Reinforcement Learning: Beginner to Master'].
 - GIS Science Journal (2022) #link("https://drive.google.com/file/d/1RSJ3ptlvDeh9ny643ESl7j6-75ezE5HQ/view?usp=sharing")['Nanocomposites'].
-- SoftTech Solutions (2023) #link("https://drive.google.com/file/d/15DvDwrywRJZEFmEJmugoHJoxzCBvbZJU/view?usp=sharing")['Internship Certificate'].
-- Suvidha Foundation (2023) #link("https://drive.google.com/file/d/13aPoM2o3AszkObIm9WXLaeFI8GElZWpa/view?usp=sharing")['Internship Certificate'].

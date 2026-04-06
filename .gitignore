@@ -1,0 +1,11 @@
+# PDFs
+*.pdf
+*.PDF
+
+# Output directories
+output/
+dist/
+build/
+
+# macOS
+.DS_Store
